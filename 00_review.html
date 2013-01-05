@@ -11,11 +11,20 @@
 <body>
 <script>
 var a = 15;
-alert(a);
+//alert(a);
+var add = function(a, b) {
+	return a + b;
+};
+var seeIfItsBiggerThan5 = function(num){
+	if (num > 5) {
+		alert ('way to go');
+	}
+	if (num < 5) {
+		alert ('you fracked up now');
+	}
+};
 
-
-
-
+seeIfItsBiggerThan5(3);
 </script>
 </body>
 </html>

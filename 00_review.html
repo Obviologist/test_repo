@@ -24,7 +24,7 @@ var seeIfItsBiggerThan5 = function(num){
 	}
 };
 
-seeIfItsBiggerThan5(3);
+//seeIfItsBiggerThan5(3);
 
 var loopDatArray = function(myAwesomeArray){
 	var adam;
@@ -32,11 +32,29 @@ var loopDatArray = function(myAwesomeArray){
 		alert(myAwesomeArray[adam]);
 	}
 
-}
-var myArrayOfAwesome = ['i', 'love', 'to', 'make', 'puns'];
-loopDatArray(myArrayOfAwesome);
-alert('adam rocks');
+};
 
+var myArrayOfAwesome = ['i', 'love', 'to', 'make', 'puns'];
+//loopDatArray(myArrayOfAwesome);
+
+//alert('adam rocks');
+
+var findCosmoAndFeedHimAFish = function(animalList){
+	var animalIndex, animal;
+	for (animalIndex = 0; animalIndex < animalList.length; animalIndex += 1){
+		animal = animalList[animalIndex];
+		//alert(animal);
+		if (animal == 'Cosmo') {
+			alert('I Found Cosmo and fed him a FISH');
+			animalIndex = animalList.length;
+		} else {
+			alert(animal + ' is not cosmo, your cosmo is in another key');
+		}
+		
+	}
+};
+var animals = ['Garfield', 'Spot', 'Heathcliffe', 'Cosmo', 'Dumbo', 'Bambi'];
+findCosmoAndFeedHimAFish(animals);
 </script>
 </body>
 </html>

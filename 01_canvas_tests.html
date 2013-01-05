@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>javascript review</title>
+
+	<style>
+	canvas {
+		border: 1px solid #ccc;
+	}
+	</style>
+
+</head>
+<body>
+	<canvas id="testCanvas" width="640" height="480"></canvas>
+
+<script>
+var canvas = document.getElementById('testCanvas');
+var context = canvas.getContext('2d');
+console.dir(context);
+
+context.beginPath();
+context.moveTo(100, 50);
+context.lineTo(300, 150);
+context.stroke();
+
+var pointA = {
+	x: 35,
+	y: 78
+};
+var pointB ={
+	x: 175,
+	y: 250
+};
+
+var drawline = function(a,b){
+	context.beginPath();
+	context.moveTo(a.x, a.y);
+	context.lineTo(b.x, b.y);
+	context.stroke();
+
+};
+
+drawline(pointA, pointB);
+
+
+
+
+
+</script>
+</body>
+</html>
